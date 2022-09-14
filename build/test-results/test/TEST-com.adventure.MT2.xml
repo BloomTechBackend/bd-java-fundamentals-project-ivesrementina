@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.adventure.MT2" tests="2" skipped="0" failures="0" errors="0" timestamp="2022-09-14T09:20:05" hostname="MININT-TCFPB5L" time="0.161">
-  <properties/>
-  <testcase name="canOpenDoor()" classname="com.adventure.MT2" time="0.125"/>
-  <testcase name="setName()" classname="com.adventure.MT2" time="0.034"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
