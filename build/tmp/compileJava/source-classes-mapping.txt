@@ -26,8 +26,10 @@ main/com/adventure/world/Monster.java
  main.com.adventure.world.Monster
 main/com/adventure/world/scenes/s2_m3/HouseScene.java
  main.com.adventure.world.scenes.s2_m3.HouseScene
-main/com/adventure/CombatController.java
- main.com.adventure.CombatController
+main/com/adventure/world/World.java
+ main.com.adventure.world.World
+ main.com.adventure.world.World$1
+ main.com.adventure.world.World$ConsoleEscapeTangibleListener
 main/com/adventure/world/objects/keys/ConsoleKey.java
  main.com.adventure.world.objects.keys.ConsoleKey
 main/com/adventure/world/objects/Tangible.java
@@ -76,9 +78,7 @@ main/com/adventure/settings/AppSettings.java
  main.com.adventure.settings.AppSettings$Story
 main/com/adventure/settings/GameController.java
  main.com.adventure.settings.GameController
+main/com/adventure/CombatController.java
+ main.com.adventure.CombatController
 main/com/adventure/player/Player.java
  main.com.adventure.player.Player
-main/com/adventure/world/World.java
- main.com.adventure.world.World
- main.com.adventure.world.World$1
- main.com.adventure.world.World$ConsoleEscapeTangibleListener
