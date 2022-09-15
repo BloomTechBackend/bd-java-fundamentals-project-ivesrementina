@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.adventure.MT3" tests="10" skipped="0" failures="0" errors="0" timestamp="2022-09-14T13:15:43" hostname="MININT-TCFPB5L" time="1.949">
+<testsuite name="com.adventure.MT3" tests="10" skipped="0" failures="0" errors="0" timestamp="2022-09-15T05:13:32" hostname="MININT-TCFPB5L" time="2.374">
   <properties/>
-  <testcase name="testPlayerMovementInvalid()" classname="com.adventure.MT3" time="0.086"/>
+  <testcase name="testPlayerMovementInvalid()" classname="com.adventure.MT3" time="0.106"/>
   <testcase name="testPlayerMovementEast()" classname="com.adventure.MT3" time="0.004"/>
-  <testcase name="testPlayerMovementWest()" classname="com.adventure.MT3" time="0.004"/>
-  <testcase name="testInvalidMoveInput()" classname="com.adventure.MT3" time="1.772"/>
-  <testcase name="testPrompt2()" classname="com.adventure.MT3" time="0.015"/>
-  <testcase name="checkMoveInputEast()" classname="com.adventure.MT3" time="0.006"/>
-  <testcase name="checkMoveInputWest()" classname="com.adventure.MT3" time="0.006"/>
-  <testcase name="testUseInput()" classname="com.adventure.MT3" time="0.025"/>
-  <testcase name="checkSimpleInput()" classname="com.adventure.MT3" time="0.004"/>
-  <testcase name="testPrompt()" classname="com.adventure.MT3" time="0.003"/>
+  <testcase name="testPlayerMovementWest()" classname="com.adventure.MT3" time="0.001"/>
+  <testcase name="testInvalidMoveInput()" classname="com.adventure.MT3" time="2.165"/>
+  <testcase name="testPrompt2()" classname="com.adventure.MT3" time="0.01"/>
+  <testcase name="checkMoveInputEast()" classname="com.adventure.MT3" time="0.009"/>
+  <testcase name="checkMoveInputWest()" classname="com.adventure.MT3" time="0.015"/>
+  <testcase name="testUseInput()" classname="com.adventure.MT3" time="0.039"/>
+  <testcase name="checkSimpleInput()" classname="com.adventure.MT3" time="0.005"/>
+  <testcase name="testPrompt()" classname="com.adventure.MT3" time="0.005"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

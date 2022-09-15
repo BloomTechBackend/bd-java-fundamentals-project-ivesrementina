@@ -24,7 +24,7 @@ public class Player {
      * @param newName - the player's name that will be saved
      */
     public void setName(String newName) {
-    name = newName;
+        name = newName;
         System.out.println("Your name is now " + name);
 
     }
@@ -73,15 +73,13 @@ public class Player {
      */
     public boolean move(String direction, boolean isValidDirection) {
         if (isValidDirection) {
-            if(direction.equalsIgnoreCase("EAST")){
+            if (direction.equalsIgnoreCase("EAST")) {
                 currentLocationIndex++;
-            }
-            else if (direction.equalsIgnoreCase("WEST")){
+            } else if (direction.equalsIgnoreCase("WEST")) {
                 currentLocationIndex--;
             }
             return true;
-        }
-        else{
+        } else {
             System.out.println(direction + " is not a valid direction");
             return false;
         }
