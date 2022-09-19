@@ -1,6 +1,6 @@
 package main.com.adventure.player;
 
-import main.com.adventure.world.objects.Tangible;
+import main.com.adventure.objects.Tangible;
 
 /**
  * Stores any Tangible item up to the MAX_CAPACITY.

@@ -1,14 +1,8 @@
 package com.adventure;
 
-import main.com.adventure.settings.CommandVerb;
-import main.com.adventure.world.objects.doors.OmniDoor;
-import main.com.adventure.world.objects.keys.OmniKey;
-import org.junit.jupiter.api.BeforeEach;
+import main.com.adventure.objects.doors.OmniDoor;
+import main.com.adventure.objects.keys.OmniKey;
 import org.junit.jupiter.api.Test;
-
-import java.io.ByteArrayOutputStream;
-import java.io.PrintStream;
-import java.util.Arrays;
 
 import static org.junit.jupiter.api.Assertions.*;
 

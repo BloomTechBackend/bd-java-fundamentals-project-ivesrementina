@@ -1,10 +1,9 @@
 package main.com.adventure.player;
-
+import main.com.adventure.objects.Shovel;
+import main.com.adventure.objects.Tangible;
+import main.com.adventure.objects.Weapon;
+import main.com.adventure.objects.keys.Key;
 import main.com.adventure.settings.AppSettings;
-import main.com.adventure.world.objects.Shovel;
-import main.com.adventure.world.objects.Tangible;
-import main.com.adventure.world.objects.Weapon;
-import main.com.adventure.world.objects.keys.Key;
 
 public class Player {
 

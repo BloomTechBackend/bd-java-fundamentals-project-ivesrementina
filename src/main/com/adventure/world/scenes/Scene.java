@@ -1,6 +1,6 @@
 package main.com.adventure.world.scenes;
 
-import main.com.adventure.world.objects.Tangible;
+import main.com.adventure.objects.Tangible;
 
 import java.util.List;
 

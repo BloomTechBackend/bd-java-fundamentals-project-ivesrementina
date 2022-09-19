@@ -1,9 +1,9 @@
 package com.adventure;
 
-import main.com.adventure.world.objects.doors.DoorFactory;
-import main.com.adventure.world.objects.keys.KeyFactory;
-import main.com.adventure.world.objects.doors.Door;
-import main.com.adventure.world.objects.keys.Key;
+import main.com.adventure.objects.doors.DoorFactory;
+import main.com.adventure.objects.keys.KeyFactory;
+import main.com.adventure.objects.doors.Door;
+import main.com.adventure.objects.keys.Key;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;

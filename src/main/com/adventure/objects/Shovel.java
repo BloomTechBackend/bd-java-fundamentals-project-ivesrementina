@@ -1,4 +1,4 @@
-package main.com.adventure.world.objects;
+package main.com.adventure.objects;
 
 public class Shovel implements Tangible {
 

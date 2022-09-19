@@ -1,4 +1,4 @@
-package main.com.adventure.world.objects;
+package main.com.adventure.objects;
 
 /**
  * Tangible is an interface that all objects that the player can interact with must implement.

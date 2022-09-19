@@ -1,8 +1,8 @@
-package main.com.adventure.world.objects.doors;
+package main.com.adventure.objects.doors;
 
-import main.com.adventure.world.objects.Tangible;
-import main.com.adventure.world.objects.keys.Key;
-import main.com.adventure.world.objects.keys.OmniKey;
+import main.com.adventure.objects.Tangible;
+import main.com.adventure.objects.keys.Key;
+import main.com.adventure.objects.keys.OmniKey;
 
 import java.util.Arrays;
 import java.util.Random;

@@ -5,8 +5,8 @@ import main.com.adventure.player.Backpack;
 import main.com.adventure.player.Player;
 import main.com.adventure.settings.Command;
 import main.com.adventure.settings.CommandVerb;
-import main.com.adventure.world.objects.keys.Key;
-import main.com.adventure.world.objects.keys.KeyFactory;
+import main.com.adventure.objects.keys.Key;
+import main.com.adventure.objects.keys.KeyFactory;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

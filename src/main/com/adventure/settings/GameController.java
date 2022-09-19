@@ -2,13 +2,13 @@ package main.com.adventure.settings;
 
 import main.com.adventure.CombatController;
 import main.com.adventure.GameInputProcessor;
+import main.com.adventure.objects.Shovel;
+import main.com.adventure.objects.Tangible;
+import main.com.adventure.objects.Weapon;
+import main.com.adventure.objects.keys.Key;
 import main.com.adventure.player.Player;
 import main.com.adventure.world.Monster;
 import main.com.adventure.world.World;
-import main.com.adventure.world.objects.Shovel;
-import main.com.adventure.world.objects.Tangible;
-import main.com.adventure.world.objects.Weapon;
-import main.com.adventure.world.objects.keys.Key;
 import main.com.adventure.world.scenes.IMonsterScene;
 import main.com.adventure.world.scenes.Scene;
 import main.com.adventure.world.scenes.SceneDescriptionNotFoundException;

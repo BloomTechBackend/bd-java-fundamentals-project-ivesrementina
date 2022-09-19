@@ -1,7 +1,7 @@
-package main.com.adventure.world.objects.doors;
+package main.com.adventure.objects.doors;
 
-import main.com.adventure.world.objects.Tangible;
-import main.com.adventure.world.objects.keys.Key;
+import main.com.adventure.objects.Tangible;
+import main.com.adventure.objects.keys.Key;
 
 /**
  * Doors can be open or locked. That state should be maintained in this class.
@@ -18,14 +18,29 @@ public class Door implements Tangible {
     private boolean isOpen = false;
 
     //TODO Add a level property
+    private int level = 1;
 
     //TODO Add a default (i.e. no params) constructor here
+    /**
+     *Create Door constructor.
+     * */
+    public Door() {
+    }
 
     //TODO Add a constructor that takes an isOpen and level and saves both
+    /**
+     *Create Door constructor.
+     * @param isOpen - constructor that takes an isOpen
+     * @param level - constructor that takes an level
+     * */
+    public Door(boolean isOpen, int level) {
+        this.level = level;
+        this.isOpen = isOpen;
+    }
 
     private boolean isKeyValid(Key key) {
         //TODO Update doorLevel so it references the level of this door
-        int doorLevel = -1;
+        int doorLevel = level;
 
         return key != null && key.getLevel() == doorLevel;
     }

@@ -2,7 +2,7 @@ package com.adventure;
 
 import main.com.adventure.CombatController;
 import main.com.adventure.player.Player;
-import main.com.adventure.world.objects.Weapon;
+import main.com.adventure.objects.Weapon;
 import main.com.adventure.world.Monster;
 import main.com.adventure.world.scenes.SceneDescriptionFileReader;
 import org.junit.jupiter.api.Test;

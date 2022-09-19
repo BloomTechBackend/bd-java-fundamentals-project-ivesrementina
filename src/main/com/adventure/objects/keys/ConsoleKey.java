@@ -1,6 +1,6 @@
-package main.com.adventure.world.objects.keys;
+package main.com.adventure.objects.keys;
 
-import main.com.adventure.world.objects.TangibleListener;
+import main.com.adventure.objects.TangibleListener;
 
 public class ConsoleKey extends Key {
 

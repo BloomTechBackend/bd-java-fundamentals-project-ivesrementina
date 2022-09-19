@@ -1,9 +1,8 @@
 package main.com.adventure.world.scenes.s3_m2;
-
+import main.com.adventure.objects.Tangible;
+import main.com.adventure.objects.Weapon;
 import main.com.adventure.world.Direction;
 import main.com.adventure.world.Monster;
-import main.com.adventure.world.objects.Tangible;
-import main.com.adventure.world.objects.Weapon;
 import main.com.adventure.world.scenes.Scene;
 import main.com.adventure.world.scenes.SceneDescriptionFileReader;
 

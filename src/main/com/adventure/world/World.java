@@ -1,9 +1,8 @@
 package main.com.adventure.world;
-
+import main.com.adventure.objects.Tangible;
+import main.com.adventure.objects.TangibleListener;
+import main.com.adventure.objects.doors.Door;
 import main.com.adventure.settings.AppSettings;
-import main.com.adventure.world.objects.Tangible;
-import main.com.adventure.world.objects.TangibleListener;
-import main.com.adventure.world.objects.doors.Door;
 import main.com.adventure.world.scenes.Scene;
 import main.com.adventure.world.scenes.SceneFactory;
 

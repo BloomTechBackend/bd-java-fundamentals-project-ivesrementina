@@ -1,6 +1,6 @@
-package main.com.adventure.world.objects;
+package main.com.adventure.objects;
 
-import main.com.adventure.world.objects.keys.Key;
+import main.com.adventure.objects.keys.Key;
 
 public class Hole {
 

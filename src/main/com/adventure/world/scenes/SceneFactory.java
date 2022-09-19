@@ -1,6 +1,6 @@
 package main.com.adventure.world.scenes;
 
-import main.com.adventure.world.objects.TangibleListener;
+import main.com.adventure.objects.TangibleListener;
 import main.com.adventure.world.scenes.s2_m1.CaveEscapeScene;
 import main.com.adventure.world.scenes.s2_m2.ConsoleScene;
 import main.com.adventure.world.scenes.s2_m2.HallwayDoorScene;

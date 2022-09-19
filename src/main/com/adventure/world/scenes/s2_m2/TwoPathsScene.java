@@ -1,7 +1,6 @@
 package main.com.adventure.world.scenes.s2_m2;
-
+import main.com.adventure.objects.Tangible;
 import main.com.adventure.world.Direction;
-import main.com.adventure.world.objects.Tangible;
 import main.com.adventure.world.scenes.Scene;
 
 import java.util.ArrayList;

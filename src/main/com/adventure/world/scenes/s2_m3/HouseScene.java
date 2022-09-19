@@ -1,9 +1,8 @@
 package main.com.adventure.world.scenes.s2_m3;
-
+import main.com.adventure.objects.Tangible;
+import main.com.adventure.objects.keys.Key;
+import main.com.adventure.objects.keys.KeyFactory;
 import main.com.adventure.world.Direction;
-import main.com.adventure.world.objects.Tangible;
-import main.com.adventure.world.objects.keys.Key;
-import main.com.adventure.world.objects.keys.KeyFactory;
 import main.com.adventure.world.scenes.Scene;
 
 import java.util.ArrayList;
