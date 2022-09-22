@@ -22,11 +22,33 @@ public enum CommandVerb {
 
     /**
      * Takes verbString to determine and return the associated CommandVerb.
+     *
      * @param verbString - the verb from the user input
      * @return - the CommandVerb associated with the given input.
      */
     public static CommandVerb getVerb(String verbString) {
-        return INVALID;
-    }
+        System.out.println(verbString);
+        if (verbString.equalsIgnoreCase(CommandVerb.TAKE.toString())) {
+            return CommandVerb.TAKE;
+        } else if (verbString.equalsIgnoreCase(CommandVerb.MOVE.toString())) {
+            return CommandVerb.MOVE;
+        } else if (verbString.equalsIgnoreCase(CommandVerb.USE.toString())) {
+            return CommandVerb.USE;
+        } else if (verbString.equalsIgnoreCase(CommandVerb.DIG.toString())) {
+            return CommandVerb.DIG;
+        } else if (verbString.equalsIgnoreCase(CommandVerb.EXAMINE.toString())) {
+            return CommandVerb.EXAMINE;
+        } else if (verbString.equalsIgnoreCase(CommandVerb.LOOK.toString())) {
+            return CommandVerb.LOOK;
+        } else if (verbString.equalsIgnoreCase(CommandVerb.HELP.toString())) {
+            return CommandVerb.HELP;
+        } else if (verbString.equalsIgnoreCase(CommandVerb.FIGHT.toString())) {
+            return CommandVerb.FIGHT;
+        } else if (verbString.equalsIgnoreCase(CommandVerb.INVENTORY.toString())) {
+            return CommandVerb.INVENTORY;
+        } else {
+            return CommandVerb.INVALID;
+        }
 
+    }
 }
