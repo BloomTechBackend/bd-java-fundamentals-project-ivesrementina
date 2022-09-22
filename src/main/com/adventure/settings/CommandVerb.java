@@ -27,28 +27,28 @@ public enum CommandVerb {
      * @return - the CommandVerb associated with the given input.
      */
     public static CommandVerb getVerb(String verbString) {
-        System.out.println(verbString);
+        CommandVerb commandVerb;
         if (verbString.equalsIgnoreCase(CommandVerb.TAKE.toString())) {
-            return CommandVerb.TAKE;
+            commandVerb = CommandVerb.TAKE;
         } else if (verbString.equalsIgnoreCase(CommandVerb.MOVE.toString())) {
-            return CommandVerb.MOVE;
+            commandVerb = CommandVerb.MOVE;
         } else if (verbString.equalsIgnoreCase(CommandVerb.USE.toString())) {
-            return CommandVerb.USE;
+            commandVerb = CommandVerb.USE;
         } else if (verbString.equalsIgnoreCase(CommandVerb.DIG.toString())) {
-            return CommandVerb.DIG;
+            commandVerb = CommandVerb.DIG;
         } else if (verbString.equalsIgnoreCase(CommandVerb.EXAMINE.toString())) {
-            return CommandVerb.EXAMINE;
+            commandVerb = CommandVerb.EXAMINE;
         } else if (verbString.equalsIgnoreCase(CommandVerb.LOOK.toString())) {
-            return CommandVerb.LOOK;
+            commandVerb = CommandVerb.LOOK;
         } else if (verbString.equalsIgnoreCase(CommandVerb.HELP.toString())) {
-            return CommandVerb.HELP;
+            commandVerb = CommandVerb.HELP;
         } else if (verbString.equalsIgnoreCase(CommandVerb.FIGHT.toString())) {
-            return CommandVerb.FIGHT;
+            commandVerb = CommandVerb.FIGHT;
         } else if (verbString.equalsIgnoreCase(CommandVerb.INVENTORY.toString())) {
-            return CommandVerb.INVENTORY;
+            commandVerb = CommandVerb.INVENTORY;
         } else {
-            return CommandVerb.INVALID;
+            commandVerb = CommandVerb.INVALID;
         }
-
+        return commandVerb;
     }
 }
