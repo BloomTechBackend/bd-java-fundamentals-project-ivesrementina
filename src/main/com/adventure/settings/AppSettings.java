@@ -1,11 +1,11 @@
 package main.com.adventure.settings;
 
-import static main.com.adventure.settings.AppSettings.Story.MT6_TestDirections;
+import static main.com.adventure.settings.AppSettings.Story. MT7_MonsterScene;
 
 public class AppSettings {
 
     /** You will update this property for each project. **/
-    public static final Story story = MT6_TestDirections;
+    public static final Story story =  MT7_MonsterScene;
 
     public enum Story {
         TestScene,

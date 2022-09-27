@@ -8,6 +8,8 @@ public class CombatController {
     private Player player;
     private Monster monster;
 
+    private boolean attack;
+
     /**
      * Processes a combat situation between the player and a monster.
      * @param player - the game's player.
@@ -24,16 +26,29 @@ public class CombatController {
      */
     public void autosimulateCombat() {
 
-    }
+        while (player.getHealth() > 0 && monster.getHealth() > 0) {
+            if (attack) {
+                this.monster.setHealth(monster.getHealth() - this.player.getPower());
+                attack = false;
+            } else {
+                this.player.setHealth(player.getHealth() - this.monster.getPower());
+                attack = true;
+            }
+        }
 
+    }
+    /**
+     * @return isPlayerDefeated
+     */
     public boolean isPlayerDefeated() {
-        return false;
+        return attack;
     }
 
     /**
      * Resets the health of the monster and player back to 10.
      */
     public void reset() {
-
+        player.setHealth(10);
+        monster.setHealth(10);
     }
 }
