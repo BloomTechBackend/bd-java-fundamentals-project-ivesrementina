@@ -1,18 +1,17 @@
 package main.com.adventure.player;
-import main.com.adventure.objects.Shovel;
+
 import main.com.adventure.objects.Tangible;
 import main.com.adventure.objects.Weapon;
-import main.com.adventure.objects.keys.Key;
 import main.com.adventure.settings.AppSettings;
 
 public class Player {
 
     public int level = 5;
     private int currentLocationIndex = AppSettings.getStartingLocation();
-    private Key key;
 
+    private Backpack backpack = new Backpack();
     private String name;
-    private Shovel shovel;
+
     private int power = 1;
     private int health = 10;
 
@@ -103,7 +102,8 @@ public class Player {
      */
     public Tangible getItem(String itemName) {
         //TODO Complete this function in Sprint 3 Module 3
-        return null;
+        Tangible item = backpack.getItem(itemName);
+        return item;
     }
 
     /**
@@ -114,6 +114,10 @@ public class Player {
      */
     public Tangible removeItem(Tangible item) {
         //TODO Complete this function in Sprint 3 Module 3
+        boolean itemIsRemoved = backpack.removeItem(item);
+        if (itemIsRemoved) {
+            return item;
+        }
         return null;
     }
 
@@ -123,6 +127,7 @@ public class Player {
      */
     public void printItems() {
         //TODO Complete this function in Sprint 3 Module 3
+        backpack.printItems();
     }
 
     /**
@@ -132,22 +137,7 @@ public class Player {
      */
     public void addItem(Tangible item) {
         //TODO Complete this function
-    }
-
-    public void setKey(Key item) {
-        key = item;
-    }
-
-    public Key getKey() {
-        return key;
-    }
-
-    public void setShovel(Shovel item) {
-        shovel = item;
-    }
-
-    public Shovel getShovel() {
-        return shovel;
+        backpack.addItem(item);
     }
 
     //////// DON'T CHANGE THE CODE BELOW. ///////////

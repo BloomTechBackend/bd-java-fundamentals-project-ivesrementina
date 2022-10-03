@@ -6,6 +6,7 @@ import main.com.adventure.objects.Shovel;
 import main.com.adventure.objects.Tangible;
 import main.com.adventure.objects.Weapon;
 import main.com.adventure.objects.keys.Key;
+import main.com.adventure.player.Backpack;
 import main.com.adventure.player.Player;
 import main.com.adventure.world.Monster;
 import main.com.adventure.world.World;
@@ -18,7 +19,7 @@ import java.util.Locale;
 import java.util.Scanner;
 
 public class GameController {
-
+    Backpack backpack = new Backpack();
     private final Player player = new Player();
     private final World world = new World();
     private final GameInputProcessor inputProcessor = new GameInputProcessor();
@@ -101,12 +102,12 @@ public class GameController {
 
     private Tangible getTangibleObject(String itemName) {
         if (AppSettings.canAccessFunctions(AppSettings.Story.MT8)) {
-            return player.getItem(itemName);
+            return backpack .getItem(itemName);
         }
         if (itemName.equalsIgnoreCase("key")) {
-            return player.getKey();
+            return backpack .getKey();
         } else if (itemName.equalsIgnoreCase("shovel")) {
-            return player.getShovel();
+            return backpack .getShovel();
         }
         return null;
     }
@@ -151,6 +152,10 @@ public class GameController {
                 take(command.getObjectName());
                 break;
 
+            case INVENTORY:
+                player.printItems();
+                break;
+
             default: printInvalidCommand();
                 break;
         }
@@ -176,7 +181,7 @@ public class GameController {
     }
 
     private void dig() {
-        if (player.getShovel() != null) {
+        if (backpack .getShovel() != null) {
             getCurrentScene().dig();
             describeCurrentScene();
         } else {
@@ -195,7 +200,7 @@ public class GameController {
         }
 
         if (AppSettings.canAccessFunctions(AppSettings.Story.MT8)) {
-            player.addItem(item);
+            backpack .addItem(item);
         } else {
             setItem(item);
         }
@@ -222,11 +227,11 @@ public class GameController {
     }
 
     private void setShovel(Shovel item) {
-        player.setShovel(item);
+        backpack .setShovel(item);
     }
 
     private void setKey(Key item) {
-        player.setKey(item);
+        backpack .setKey(item);
     }
 
     private void printInvalidCommand() {
